@@ -106,30 +106,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rectangle
+# Target rules for targets named cpp_ccn
 
 # Build rule for target.
-rectangle: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rectangle
-.PHONY : rectangle
+cpp_ccn: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cpp_ccn
+.PHONY : cpp_ccn
 
 # fast build rule for target.
-rectangle/fast:
-	$(MAKE) -f src/CMakeFiles/rectangle.dir/build.make src/CMakeFiles/rectangle.dir/build
-.PHONY : rectangle/fast
+cpp_ccn/fast:
+	$(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/build
+.PHONY : cpp_ccn/fast
 
 #=============================================================================
-# Target rules for targets named rectangletest
+# Target rules for targets named cpp_ccn_tests
 
 # Build rule for target.
-rectangletest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rectangletest
-.PHONY : rectangletest
+cpp_ccn_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cpp_ccn_tests
+.PHONY : cpp_ccn_tests
 
 # fast build rule for target.
-rectangletest/fast:
-	$(MAKE) -f test/CMakeFiles/rectangletest.dir/build.make test/CMakeFiles/rectangletest.dir/build
-.PHONY : rectangletest/fast
+cpp_ccn_tests/fast:
+	$(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/build
+.PHONY : cpp_ccn_tests/fast
 
 # Help Target
 help:
@@ -140,8 +140,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... rectangle"
-	@echo "... rectangletest"
+	@echo "... cpp_ccn"
+	@echo "... cpp_ccn_tests"
 .PHONY : help
 
 

@@ -106,25 +106,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/rectangle.dir/rule:
-	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/rectangle.dir/rule
-.PHONY : src/CMakeFiles/rectangle.dir/rule
+src/CMakeFiles/cpp_ccn.dir/rule:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/cpp_ccn.dir/rule
+.PHONY : src/CMakeFiles/cpp_ccn.dir/rule
 
 # Convenience name for target.
-rectangle: src/CMakeFiles/rectangle.dir/rule
-.PHONY : rectangle
+cpp_ccn: src/CMakeFiles/cpp_ccn.dir/rule
+.PHONY : cpp_ccn
 
 # fast build rule for target.
-rectangle/fast:
-	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/rectangle.dir/build.make src/CMakeFiles/rectangle.dir/build
-.PHONY : rectangle/fast
+cpp_ccn/fast:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/build
+.PHONY : cpp_ccn/fast
 
 Rectangle.o: Rectangle.cc.o
 .PHONY : Rectangle.o
 
 # target to build an object file
 Rectangle.cc.o:
-	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/rectangle.dir/build.make src/CMakeFiles/rectangle.dir/Rectangle.cc.o
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/Rectangle.cc.o
 .PHONY : Rectangle.cc.o
 
 Rectangle.i: Rectangle.cc.i
@@ -132,7 +132,7 @@ Rectangle.i: Rectangle.cc.i
 
 # target to preprocess a source file
 Rectangle.cc.i:
-	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/rectangle.dir/build.make src/CMakeFiles/rectangle.dir/Rectangle.cc.i
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/Rectangle.cc.i
 .PHONY : Rectangle.cc.i
 
 Rectangle.s: Rectangle.cc.s
@@ -140,8 +140,32 @@ Rectangle.s: Rectangle.cc.s
 
 # target to generate assembly for a file
 Rectangle.cc.s:
-	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/rectangle.dir/build.make src/CMakeFiles/rectangle.dir/Rectangle.cc.s
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/Rectangle.cc.s
 .PHONY : Rectangle.cc.s
+
+Wallet.o: Wallet.cc.o
+.PHONY : Wallet.o
+
+# target to build an object file
+Wallet.cc.o:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/Wallet.cc.o
+.PHONY : Wallet.cc.o
+
+Wallet.i: Wallet.cc.i
+.PHONY : Wallet.i
+
+# target to preprocess a source file
+Wallet.cc.i:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/Wallet.cc.i
+.PHONY : Wallet.cc.i
+
+Wallet.s: Wallet.cc.s
+.PHONY : Wallet.s
+
+# target to generate assembly for a file
+Wallet.cc.s:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/Wallet.cc.s
+.PHONY : Wallet.cc.s
 
 # Help Target
 help:
@@ -149,13 +173,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... cpp_ccn"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... rectangle"
 	@echo "... test"
 	@echo "... Rectangle.o"
 	@echo "... Rectangle.i"
 	@echo "... Rectangle.s"
+	@echo "... Wallet.o"
+	@echo "... Wallet.i"
+	@echo "... Wallet.s"
 .PHONY : help
 
 

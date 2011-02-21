@@ -106,25 +106,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/rectangletest.dir/rule:
-	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/rectangletest.dir/rule
-.PHONY : test/CMakeFiles/rectangletest.dir/rule
+test/CMakeFiles/cpp_ccn_tests.dir/rule:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/cpp_ccn_tests.dir/rule
+.PHONY : test/CMakeFiles/cpp_ccn_tests.dir/rule
 
 # Convenience name for target.
-rectangletest: test/CMakeFiles/rectangletest.dir/rule
-.PHONY : rectangletest
+cpp_ccn_tests: test/CMakeFiles/cpp_ccn_tests.dir/rule
+.PHONY : cpp_ccn_tests
 
 # fast build rule for target.
-rectangletest/fast:
-	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/rectangletest.dir/build.make test/CMakeFiles/rectangletest.dir/build
-.PHONY : rectangletest/fast
+cpp_ccn_tests/fast:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/build
+.PHONY : cpp_ccn_tests/fast
 
 RectangleTest.o: RectangleTest.cc.o
 .PHONY : RectangleTest.o
 
 # target to build an object file
 RectangleTest.cc.o:
-	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/rectangletest.dir/build.make test/CMakeFiles/rectangletest.dir/RectangleTest.cc.o
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/RectangleTest.cc.o
 .PHONY : RectangleTest.cc.o
 
 RectangleTest.i: RectangleTest.cc.i
@@ -132,7 +132,7 @@ RectangleTest.i: RectangleTest.cc.i
 
 # target to preprocess a source file
 RectangleTest.cc.i:
-	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/rectangletest.dir/build.make test/CMakeFiles/rectangletest.dir/RectangleTest.cc.i
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/RectangleTest.cc.i
 .PHONY : RectangleTest.cc.i
 
 RectangleTest.s: RectangleTest.cc.s
@@ -140,8 +140,32 @@ RectangleTest.s: RectangleTest.cc.s
 
 # target to generate assembly for a file
 RectangleTest.cc.s:
-	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/rectangletest.dir/build.make test/CMakeFiles/rectangletest.dir/RectangleTest.cc.s
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/RectangleTest.cc.s
 .PHONY : RectangleTest.cc.s
+
+WalletTest.o: WalletTest.cc.o
+.PHONY : WalletTest.o
+
+# target to build an object file
+WalletTest.cc.o:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/WalletTest.cc.o
+.PHONY : WalletTest.cc.o
+
+WalletTest.i: WalletTest.cc.i
+.PHONY : WalletTest.i
+
+# target to preprocess a source file
+WalletTest.cc.i:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/WalletTest.cc.i
+.PHONY : WalletTest.cc.i
+
+WalletTest.s: WalletTest.cc.s
+.PHONY : WalletTest.s
+
+# target to generate assembly for a file
+WalletTest.cc.s:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/WalletTest.cc.s
+.PHONY : WalletTest.cc.s
 
 # Help Target
 help:
@@ -149,13 +173,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... cpp_ccn_tests"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... rectangletest"
 	@echo "... test"
 	@echo "... RectangleTest.o"
 	@echo "... RectangleTest.i"
 	@echo "... RectangleTest.s"
+	@echo "... WalletTest.o"
+	@echo "... WalletTest.i"
+	@echo "... WalletTest.s"
 .PHONY : help
 
 

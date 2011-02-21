@@ -1,1 +1,0 @@
-/usr/lib/ccache/c++  -fPIC   -shared -Wl,-soname,librectangle.so -o librectangle.so CMakeFiles/rectangle.dir/Rectangle.cc.o 
