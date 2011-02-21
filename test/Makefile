@@ -119,6 +119,30 @@ cpp_ccn_tests/fast:
 	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/build
 .PHONY : cpp_ccn_tests/fast
 
+CustomerTest.o: CustomerTest.cc.o
+.PHONY : CustomerTest.o
+
+# target to build an object file
+CustomerTest.cc.o:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/CustomerTest.cc.o
+.PHONY : CustomerTest.cc.o
+
+CustomerTest.i: CustomerTest.cc.i
+.PHONY : CustomerTest.i
+
+# target to preprocess a source file
+CustomerTest.cc.i:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/CustomerTest.cc.i
+.PHONY : CustomerTest.cc.i
+
+CustomerTest.s: CustomerTest.cc.s
+.PHONY : CustomerTest.s
+
+# target to generate assembly for a file
+CustomerTest.cc.s:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/CustomerTest.cc.s
+.PHONY : CustomerTest.cc.s
+
 RectangleTest.o: RectangleTest.cc.o
 .PHONY : RectangleTest.o
 
@@ -177,6 +201,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... CustomerTest.o"
+	@echo "... CustomerTest.i"
+	@echo "... CustomerTest.s"
 	@echo "... RectangleTest.o"
 	@echo "... RectangleTest.i"
 	@echo "... RectangleTest.s"

@@ -2,7 +2,7 @@
 #define CASHIER_HH_
 
 
-namespace {
+namespace demeter {
     //Represents the cashier @ murugun idli shop
 	class Cashier{
 		public:
