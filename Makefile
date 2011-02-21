@@ -106,6 +106,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named lcov
+
+# Build rule for target.
+lcov: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lcov
+.PHONY : lcov
+
+# fast build rule for target.
+lcov/fast:
+	$(MAKE) -f CMakeFiles/lcov.dir/build.make CMakeFiles/lcov.dir/build
+.PHONY : lcov/fast
+
+#=============================================================================
 # Target rules for targets named cpp_ccn
 
 # Build rule for target.
@@ -138,6 +151,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... lcov"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... cpp_ccn"
