@@ -119,6 +119,30 @@ cpp_ccn_tests/fast:
 	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/build
 .PHONY : cpp_ccn_tests/fast
 
+CashierTest.o: CashierTest.cc.o
+.PHONY : CashierTest.o
+
+# target to build an object file
+CashierTest.cc.o:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/CashierTest.cc.o
+.PHONY : CashierTest.cc.o
+
+CashierTest.i: CashierTest.cc.i
+.PHONY : CashierTest.i
+
+# target to preprocess a source file
+CashierTest.cc.i:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/CashierTest.cc.i
+.PHONY : CashierTest.cc.i
+
+CashierTest.s: CashierTest.cc.s
+.PHONY : CashierTest.s
+
+# target to generate assembly for a file
+CashierTest.cc.s:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f test/CMakeFiles/cpp_ccn_tests.dir/build.make test/CMakeFiles/cpp_ccn_tests.dir/CashierTest.cc.s
+.PHONY : CashierTest.cc.s
+
 CustomerTest.o: CustomerTest.cc.o
 .PHONY : CustomerTest.o
 
@@ -201,6 +225,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... CashierTest.o"
+	@echo "... CashierTest.i"
+	@echo "... CashierTest.s"
 	@echo "... CustomerTest.o"
 	@echo "... CustomerTest.i"
 	@echo "... CustomerTest.s"

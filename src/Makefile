@@ -119,6 +119,30 @@ cpp_ccn/fast:
 	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/build
 .PHONY : cpp_ccn/fast
 
+Cashier.o: Cashier.cc.o
+.PHONY : Cashier.o
+
+# target to build an object file
+Cashier.cc.o:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/Cashier.cc.o
+.PHONY : Cashier.cc.o
+
+Cashier.i: Cashier.cc.i
+.PHONY : Cashier.i
+
+# target to preprocess a source file
+Cashier.cc.i:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/Cashier.cc.i
+.PHONY : Cashier.cc.i
+
+Cashier.s: Cashier.cc.s
+.PHONY : Cashier.s
+
+# target to generate assembly for a file
+Cashier.cc.s:
+	cd /home/srikanth/wip/eclispe_workspace/cpp_ccn && $(MAKE) -f src/CMakeFiles/cpp_ccn.dir/build.make src/CMakeFiles/cpp_ccn.dir/Cashier.cc.s
+.PHONY : Cashier.cc.s
+
 Customer.o: Customer.cc.o
 .PHONY : Customer.o
 
@@ -201,6 +225,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... Cashier.o"
+	@echo "... Cashier.i"
+	@echo "... Cashier.s"
 	@echo "... Customer.o"
 	@echo "... Customer.i"
 	@echo "... Customer.s"
