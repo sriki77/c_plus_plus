@@ -4,7 +4,7 @@
 
 namespace demeter {
     //Represents the cashier @ murugun idli shop
-	class Cashier{
+	class Cashier {
 		public:
 	       explicit Cashier();
 	       void collectMoney(Customer& customer, double amt);
