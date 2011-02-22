@@ -1,5 +1,4 @@
-#ifndef TEST_HH_
-#define TEST_HH_
+#pragma once
 
 namespace {
     class Test {
@@ -17,5 +16,3 @@ namespace Testx {
     };
 
 }
-
-#endif /* TEST_HH_ */

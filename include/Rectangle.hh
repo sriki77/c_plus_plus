@@ -1,5 +1,4 @@
-#ifndef RECTANGLE_HPP_
-#define RECTANGLE_HPP_
+#pragma once
 
 class Rectangle {
 
@@ -8,10 +7,8 @@ public:
 	int area();
 	int perimeter();
 	static Rectangle* createSquare(int side);
-private:
 
+private:
 	int _length;
 	int _breadth;
 };
-
-#endif /* RECTANGLE_HPP_ */

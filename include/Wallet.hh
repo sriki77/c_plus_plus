@@ -1,6 +1,4 @@
-#ifndef WALLET_HH_
-#define WALLET_HH_
-
+#pragma once
 
 namespace demeter{
     //Represents Wallet of a customer
@@ -16,6 +14,3 @@ namespace demeter{
 	        double _amount;
 	};
 }
-
-
-#endif /* WALLET_HH_ */

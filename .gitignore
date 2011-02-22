@@ -1,0 +1,13 @@
+.cproject
+.project
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+Makefile
+cmake_install.cmake
+gmon.out
+*.so
+tags
+Testing/
+coverage/
+test/cpp_ccn_tests

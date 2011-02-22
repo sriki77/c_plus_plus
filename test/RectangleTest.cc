@@ -2,6 +2,7 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 #include "Rectangle.hh"
+#include "Square.hh"
 #include "GTest.hh"
 using namespace std;
 
@@ -13,10 +14,15 @@ GTEST(shouldSupportArea){
 	ASSERT_EQ(200,rectangle.area());
 }
 
+GTEST(shouldBeSquareFriendly) {
+	Square square(10);
+	ASSERT_EQ(100, square.area());
+	ASSERT_EQ(40, square.perimeter());
+}
 
 GTEST(shouldSupportPerimeter){
-	Rectangle rectangle(10,20);
-	ASSERT_EQ(30,rectangle.perimeter());
+	Rectangle rectangle(10, 20);
+	ASSERT_EQ(60, rectangle.perimeter());
 }
 
 GTEST(shouldBeAbleToCreateASquare){

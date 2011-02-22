@@ -1,5 +1,4 @@
-#ifndef CASHIER_HH_
-#define CASHIER_HH_
+#pragma once
 
 #include "Customer.hh"
 
@@ -14,6 +13,3 @@ namespace demeter {
 	       double _amtBalance;
 	};
 }
-
-
-#endif /* CASHIER_HH_ */

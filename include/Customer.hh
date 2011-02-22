@@ -1,5 +1,4 @@
-#ifndef CUSTOMER_HH_
-#define CUSTOMER_HH_
+#pragma once
 
 #include "Wallet.hh"
 
@@ -14,6 +13,3 @@ namespace demeter {
 	        Wallet _wallet;
 	};
 }
-
-
-#endif /* CUSTOMER_HH_ */
