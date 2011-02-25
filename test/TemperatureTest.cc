@@ -44,3 +44,11 @@ GTESTF(shouldBeAbleToCompareTemp)
     ASSERT_TRUE(*_100DegCelcius==*_212DegFahrenheit) <<"212 Deg F should be equal to 100 Deg C";
     ASSERT_TRUE(f32==C0) <<"32 Deg F should be equal to 0 Deg C";
 }
+
+GTESTF(shouldBeAbleToConvertBetweenUnits) {
+    Temperature tempInCelcius = _212DegFahrenheit->toCelcius();
+    Temperature tempInFahren = _100DegCelcius->toFahrenheit();
+
+    ASSERT_STREQ("100 Deg C",tempInCelcius) << "Converted value should be 100 Deg C";
+    ASSERT_STREQ("212 Deg F",tempInFahren) << "Converted value should be 212 Deg F";
+}

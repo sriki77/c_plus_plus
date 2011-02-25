@@ -23,6 +23,30 @@ namespace TddUnit {
         return _rawValue == other._rawValue;
     }
 
+    Temperature Temperature::toCelcius()
+    {
+        Temperature tempInCelcius(_rawValue,CELCIUS);
+        return tempInCelcius;
+    }
+
+    bool Temperature::isFahren()
+    {
+        return _unit == FAHRENHEIT;
+    }
+
+    Temperature Temperature::toFahrenheit()
+    {
+        Temperature tempInFahren(_value, FAHRENHEIT);
+
+        if(isFahren()){
+            return tempInFahren;
+        }
+
+        tempInFahren._value=(9.0/5)*_rawValue+32;
+
+        return tempInFahren;
+    }
+
 
     void Temperature::calcRawValue()
     {

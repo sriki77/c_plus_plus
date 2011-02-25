@@ -9,9 +9,11 @@ namespace TddUnit {
             Temperature(double value, Unit unit);
             operator const char*();
             bool operator==(Temperature& other);
-
+            Temperature toCelcius();
+            Temperature toFahrenheit();
         private:
             void calcRawValue();
+        bool isFahren();
             double _rawValue;
             double _value;
             Unit _unit;
