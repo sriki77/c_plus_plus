@@ -1,5 +1,6 @@
 #include <string>
 #include <sstream>
+#include <iostream>
 using namespace std;
 
 #include "Temperature.hh"
@@ -7,51 +8,37 @@ using namespace std;
 namespace TddUnit {
 
     Temperature::Temperature(double value, Unit unit):_value(value),_unit(unit) {
-        calcRawValue();
     }
 
     Temperature::operator const char*() {
         ostringstream  tempRep;
-        tempRep << _value << " Deg " << _unitRep[_unit];
+        tempRep << _value << " " << _unit;
         return tempRep.str().c_str();
     }
 
-    const char Temperature::_unitRep[2]={'C','F'};
-
     bool Temperature::operator ==(Temperature & other)
     {
-        return _rawValue == other._rawValue;
+        double convVal = other._unit.convertTo(other._value, _unit);
+        return _value == convVal;
     }
 
     Temperature Temperature::toCelcius()
     {
-        Temperature tempInCelcius(_rawValue,CELCIUS);
-        return tempInCelcius;
+        Temperature tempInCel(_unit.convertTo(_value,CELCIUS),CELCIUS);
+        return tempInCel;
     }
 
-    bool Temperature::isFahren()
-    {
-        return _unit == FAHRENHEIT;
-    }
 
     Temperature Temperature::toFahrenheit()
     {
-        Temperature tempInFahren(_value, FAHRENHEIT);
-
-        if(isFahren()){
-            return tempInFahren;
-        }
-
-        tempInFahren._value=(9.0/5)*_rawValue+32;
-
-        return tempInFahren;
+        Temperature tempInF(_unit.convertTo(_value,FAHRENHEIT),FAHRENHEIT);
+         return tempInF;
     }
 
 
-    void Temperature::calcRawValue()
-    {
-        _rawValue=(_unit==CELCIUS ? _value: (5.0/9)*(_value-32));
+    const Unit Temperature::KELVIN(1,0,Unit::KELVIN, "Deg K");
+    const Unit Temperature::CELCIUS(1,-273,Unit::CELCIUS, "Deg C");
+    const Unit Temperature::FAHRENHEIT(5.0/9,-459.4,Unit::FAHRENHEIT,"Deg F");
 
-    }
 
 }

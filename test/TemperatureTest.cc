@@ -2,7 +2,6 @@
 #include <gmock/gmock.h>
 #include "GTest.hh"
 #include "Temperature.hh"
-#include <iosfwd>
 #include <iostream>
 using namespace TddUnit;
 using namespace std;
