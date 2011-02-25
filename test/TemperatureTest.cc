@@ -51,4 +51,7 @@ GTESTF(shouldBeAbleToConvertBetweenUnits) {
 
     ASSERT_STREQ("100 Deg C",tempInCelcius) << "Converted value should be 100 Deg C";
     ASSERT_STREQ("212 Deg F",tempInFahren) << "Converted value should be 212 Deg F";
+
+    tempInFahren = _212DegFahrenheit->toFahrenheit();
+    ASSERT_STREQ("212 Deg F",tempInFahren) << "Converted value should still remain 212 Deg F";
 }
