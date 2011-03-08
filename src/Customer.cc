@@ -2,10 +2,7 @@
 
 namespace demeter {
 
-    Customer::Customer() :
-        _wallet(20) {
-
-    }
+    Customer::Customer() : _wallet(20) {}
 
     double Customer::pay(double amount) {
         _wallet -= amount;

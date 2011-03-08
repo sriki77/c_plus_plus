@@ -5,12 +5,17 @@ namespace demeter{
 	class Wallet{
 		public:
 	        explicit Wallet(const double amount = 0.0);
+	        virtual ~Wallet() {}
+
 	        double balance() const;
-	        Wallet& addAmt(double amount);
+	        Wallet& add(double amount);
+	        Wallet& deduct(double amount);
+	        double empty();
+
+	        // Convenience functions
 	        Wallet& operator+=(double amount);
 	        Wallet& operator-=(double amount);
 	        void operator+=(Wallet& otherWallet);
-	        double empty();
 
 		private:
 	        double _amount;

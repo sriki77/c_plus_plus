@@ -16,17 +16,19 @@ GTEST(shouldSupportAmtBalance) {
 GTEST(shouldSupportAddAmt) {
     Wallet wallet(10);
     ASSERT_EQ(10.0,wallet.balance());
-    wallet.addAmt(10) += 30;
+    wallet.add(10) += 30;
     ASSERT_EQ(50.0, wallet.balance());
     wallet += 10;
     ASSERT_EQ(60.0,wallet.balance());
 }
 
 GTEST(shouldSupportRemAmt) {
-    Wallet wallet(10);
-    ASSERT_EQ(10, wallet.balance());
+    Wallet wallet(20);
+    ASSERT_EQ(20, wallet.balance());
     wallet -= 10;
-    ASSERT_EQ(0, wallet.balance());
+    ASSERT_EQ(10, wallet.balance());
+    wallet.deduct(10);
+	ASSERT_EQ(0.0,wallet.balance());
 }
 
 GTEST(shouldBeAbleToMergeAnotherWallet) {
