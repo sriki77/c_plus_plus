@@ -5,6 +5,7 @@
 #include "Subscriber.hh"
 
 using namespace StubMock;
+using testing::StrictMock;
 
 #define TEST_CASE PubSubTest
 
@@ -40,9 +41,10 @@ GTEST(subShouldReceiveMsgUsingStub) {
 
 GTEST(subShouldReceiveMsgUsingMock) {
     const char *msg = "Hello World!!";
-    MockSubscriber subMock;
+    StrictMock<MockSubscriber> subMock;
     EXPECT_CALL(subMock,receive(msg)).Times(1);
     Publisher pub;
     pub.add(&subMock);
     pub.publish(msg);
 }
+
